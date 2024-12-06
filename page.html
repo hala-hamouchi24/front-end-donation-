@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./page.css">
+</head>
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <h2>Touch Donation</h2>
+        </div>
+        <ul>
+            <li> <span>Dashboard</span> </li>
+            <li><span>Donors</span> </li>
+            <li><span>Members</span> </li>
+            <li><span>New donations</span> </li>
+            <li><span>Recent donations</span></li>
+            <li><span>new-members</span> </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/OOjs_UI_icon_search-ltr.svg/2048px-OOjs_UI_icon_search-ltr.svg.png" alt=""></button>
+                </div>
+                <div class="user">
+                    
+
+                    <img src="https://cdn-icons-png.flaticon.com/512/60/60977.png" alt="">
+                    <div class="img-case">
+                        <img src="./Capture d’écran 2023-01-21 200607.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-2">
+                <div class="recent-payments">
+                    <div class="title">
+                        <h2>Recent volunteer campain</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Location</th>
+                            <th>Date</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr>
+                            <td>Reforestation</td>
+                            <td>Guelma</td>
+                            <td>23-01-2023</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>awareness campain</td>
+                            <td>Ecole el amir abd elkader</td>
+                            <td>12-2-2023</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>awareness campain</td>
+                            <td>Ecole el amir abd elkader</td>
+                            <td>12-2-2023</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>awareness campain</td>
+                            <td>Ecole el amir abd elkader</td>
+                            <td>12-2-2023</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>awareness campain</td>
+                            <td>Ecole el amir abd elkader</td>
+                            <td>12-2-2023</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                      
+                    </table>
+                </div>
+                
+            </div>
+            
+              <div class="cntpup">
+
+                <button class="submit" onclick="show_pup()" type="button">Add new volunteer campain</button>
+                 <div class="card" id="pup">
+                   <img src="./Capture d’écran 2023-01-23 195501.png" alt="">
+                   <h3>Add new volunteer campain</h3>
+               <div class="vc">
+                   <div class="type">
+                       <label for="">Type: <br></label>
+                       <input type="text" placeholder="type">
+                       </div>
+                   <div class="location">
+                   <label for="">location: <br></label>
+                   <input type="text" placeholder="Location">
+                   </div>
+               <div class="date">
+                   <label for="">Date: <br></label>
+                   <input type="date">
+               </div>
+              </div>   
+                   <button class="btn-close" onclick="hide_pup()">ADD</button>
+                 </div>
+             </div>     
+           
+        </div>
+    </div>
+</body>
+<script>
+    function show_pup(){
+        document.getElementById('pup').classList.add('open');
+    }
+    function hide_pup(){
+        document.getElementById('pup').classList.remove('open');
+    }
+  </script>
+</html>

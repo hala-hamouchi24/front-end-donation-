@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Done-now</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cont">
+    <div class="form sign-in">
+      <h2>send your donation</h2>
+      <label>
+        <span>Name</span>
+        <input type="text" name="Name">
+      </label>
+      <label>
+        <span>Email Address</span>
+        <input type="email" name="email">
+      </label>
+      <label>
+        <span>Type of donation</span>
+        <select name="donation" id="donation">
+          <option value="Medicaments">Medicaments</option>
+          <option value="Food">Food</option>
+          <option value="Clothes">Clothes</option>
+        </select>
+      </label>
+      <label>
+        <span>Deposit your donation</span>
+        <input type="file" name="your donation">
+      </label>
+      <div class="cntpop">
+      <button class="submit" onclick="show_pup()" type="button">Send</button>
+      <div class="card" id="pup">
+        <img src="./Capture d’écran 2023-01-23 120918.png" alt="">
+        <h2>Your donation has been sent.</h2>
+        <p>Thank You!</p>
+        <button class="btn-close" onclick="hide_pup()">OK</button>
+      </div>
+      </div>
+
+
+      
+    </div>
+
+    <div class="sub-cont">
+      <div class="img">
+       
+       
+      </div>
+     
+    </div>
+  </div>
+<script>
+  function show_pup(){
+      document.getElementById('pup').classList.add('open');
+  }
+  function hide_pup(){
+      document.getElementById('pup').classList.remove('open');
+  }
+</script>
+</body>
+</html>
